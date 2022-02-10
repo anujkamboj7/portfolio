@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-import Projects from "../components/Projects";
-import ScrollBack from "../components/ScrollBack";
+import Hero from "../components/Hero";
 import Service from "../components/Service";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import ScrollBack from "../components/ScrollBack";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
