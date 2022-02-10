@@ -62,6 +62,7 @@ const Contact = () => {
           <a
             href='mailto:business.ak77@gmail.com'
             target='_blank'
+            rel='noreferrer'
             className='text-heading_dark hover:underline flex items-center gap-x-4'
           >
             <span>
@@ -73,6 +74,7 @@ const Contact = () => {
           <a
             href='https://api.whatsapp.com/send?phone=919315183447'
             target='_blank'
+            rel='noreferrer'
             className='text-heading_dark hover:underline flex items-center gap-x-4'
           >
             <span>

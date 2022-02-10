@@ -15,6 +15,7 @@ const Hero = () => {
               objectFit='cover'
               className='scale-125 -translate-y-4'
               priority
+              alt='anuj-kamboj'
             />
           </div>
         </div>
@@ -26,23 +27,11 @@ const Hero = () => {
             Anuj Kamboj
           </h1>
           <p className='text-base_dark leading-7'>
-            I'm a Developer with over 2 years of experience. I create Web Apps &
-            Deliver quality products within specified time limits, Ensuring
-            client satisfaction, and have worked under tight timelines and
-            stretched beyond normal working hours to ensure timeliness.
+            I'm a Developer with over 2 years of experience. I create Web Apps
+            &#38; Deliver quality products within specified time limits,
+            Ensuring client satisfaction, and have worked under tight timelines
+            and stretched beyond normal working hours to ensure timeliness.
           </p>
-
-          {/* <Link
-            activeClass='active'
-            to='contact'
-            spy={true}
-            offset={-80}
-            smooth={true}
-            duration={200}
-            className='cursor-pointer px-10 py-2.5 rounded-full bg-cta_dark text-links_dark  border-2 border-base_dark'
-          >
-            Contact
-          </Link> */}
         </div>
       </div>
     </div>

@@ -1,19 +1,21 @@
+import Image from "next/image";
+
 const servicedata = [
   {
     title: "Design",
-    img_url: "./pencil-ruler-2-line.svg",
+    img_url: "/pencil-ruler-2-line.svg",
   },
   {
     title: "Ecommerce",
-    img_url: "./shop.svg",
+    img_url: "/shop.svg",
   },
   {
     title: "Development",
-    img_url: "./display.svg",
+    img_url: "/display.svg",
   },
   {
     title: "Marketing",
-    img_url: "./marketing.svg",
+    img_url: "/marketing.svg",
   },
 ];
 
@@ -29,11 +31,15 @@ const Service = () => {
               className='h-[180px] lg:h-[200px] w-full bg-cta_dark rounded-2xl flex items-center justify-center flex-col'
               key={title}
             >
-              <img
-                src={img_url}
-                alt='desing-logo'
-                className='mb-8 lg:mb-10 h-[44px] w-[44px] lg:h-[54px] lg:w-[54px]'
-              />
+              <div className='mb-8 lg:mb-10 h-[44px] w-[44px] lg:h-[54px] lg:w-[54px] relative'>
+                <Image
+                  layout='fill'
+                  objectFit='cover'
+                  src={img_url}
+                  alt='desing-logo'
+                />
+              </div>
+
               <h3 className='text-heading_dark text-xl'>{title}</h3>
             </div>
           );
