@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section__heading {
+    @apply font-semibold text-[21px] inline-block text-heading_dark mb-10 relative after:rounded-full  after:absolute after:content-[""] after:w-full after:h-[2px] after:bg-[#353535] after:-bottom-2 after:left-0 before:absolute before:content-[""] before:bg-primary before:-bottom-2 before:left-0 before:h-[2px] before:w-[30px] before:rounded-full before:z-[1] rounded-full;
+  }
+  .input__dark {
+    @apply bg-bg_dark  focus:outline-none w-full border-2 border-[#555555] py-2.5 px-3 text-heading_dark rounded-md placeholder:text-sub_heading_dark/75 focus:border-[#aaaaaa];
+  }
+}
+
+.active {
+  border-bottom: 2px solid #007ced;
+  opacity: 1;
+}
+
+.swiper,
+.swiper-wrapper {
+  z-index: 0 !important;
+}
