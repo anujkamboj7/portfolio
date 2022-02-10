@@ -27,8 +27,8 @@ const Hero = () => {
             Anuj Kamboj
           </h1>
           <p className='text-base_dark leading-7'>
-            I'm a Developer with over 2 years of experience. I create Web Apps
-            &#38; Deliver quality products within specified time limits,
+            I&apos;m a Developer with over 2 years of experience. I create Web
+            Apps &#38; Deliver quality products within specified time limits,
             Ensuring client satisfaction, and have worked under tight timelines
             and stretched beyond normal working hours to ensure timeliness.
           </p>

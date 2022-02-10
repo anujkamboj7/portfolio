@@ -38,6 +38,7 @@ const Navbar = () => {
                 alt='logo'
                 layout='fill'
                 objectFit='cover'
+                priority
               />
             </div>
             <div className='hidden sm:flex items-center gap-x-[50px]'>
