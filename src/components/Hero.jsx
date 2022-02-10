@@ -14,8 +14,8 @@ const Hero = () => {
               src='/anujkamboj.jpg'
               objectFit='cover'
               className='scale-125 -translate-y-4'
-              priority
               alt='anuj-kamboj'
+              priority
             />
           </div>
         </div>
