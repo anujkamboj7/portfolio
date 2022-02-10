@@ -1,6 +1,7 @@
 const mail = require("@sendgrid/mail");
 mail.setApiKey(process.env.SENDGRID_API_KEY);
-export default function (req, res) {
+
+export default mailer = (req, res) => {
   const body = JSON.parse(req.body);
 
   const message = `
@@ -21,4 +22,4 @@ export default function (req, res) {
   res.status(200).json({
     status: "OK",
   });
-}
+};
