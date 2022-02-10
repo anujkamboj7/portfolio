@@ -34,7 +34,7 @@ const Navbar = () => {
               className='cursor-pointer relative block w-[32px] h-[32px] lg:w-[38px] lg:h-[38px]'
             >
               <Image
-                src='/logo.svg'
+                src='/branding.svg'
                 alt='logo'
                 layout='fill'
                 objectFit='cover'
