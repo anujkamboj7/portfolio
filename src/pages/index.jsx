@@ -12,6 +12,10 @@ export default function Home() {
     <div className='bg-bg_dark overflow-hidden  antialiased select-none relative break-word'>
       <Head>
         <meta
+          name='viewport'
+          content='width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no'
+        />
+        <meta
           name='description'
           content="I'm Anuj Kamboj. I'm a senior web developer and designer. Welcome to my corner of the internet. I'm glad you're here!"
         />
