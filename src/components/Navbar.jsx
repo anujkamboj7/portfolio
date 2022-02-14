@@ -49,7 +49,7 @@ const Navbar = () => {
       >
         <Overlay active={active} />
         <div className='container mx-auto'>
-          <div className='flex items-center justify-between h-[50px] lg:h-[70px]'>
+          <div className='flex items-center justify-between h-[60px] lg:h-[70px]'>
             <div
               href='/'
               className='relative block w-[32px] h-[32px] lg:w-[38px] lg:h-[38px]'
@@ -105,7 +105,7 @@ const Navbar = () => {
                           key={index}
                           spy={true}
                           smooth={true}
-                          offset={-50}
+                          offset={-60}
                           duration={500}
                           className='cursor-pointer realtive w-max inline-block text-links_dark opacity-60  text-[16px] hover:opacity-100 transition font-semibold'
                           onClick={() =>
@@ -165,7 +165,7 @@ const Navbar = () => {
             <span className='sm:hidden' onClick={() => setActive(true)}>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='h-6 w-6 text-heading_dark'
+                className='h-6 w-6 text-[#ffffff]'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'

@@ -4,7 +4,7 @@ import Hyphenated from "react-hyphen";
 const Hero = () => {
   return (
     <div
-      className='container pt-[80px] sm:pt-[100px] pb-10 lg:pt-[130px] lg:py-16'
+      className='container pt-[100px] pb-10 lg:pt-[140px] lg:py-16'
       name='about'
       id='about'
     >
@@ -22,10 +22,10 @@ const Hero = () => {
           </div>
         </div>
         <div className='flex-[0.7] lg:flex-[.7] sm:pl-[40px] md:pl-[60px] text-center sm:text-left'>
-          <h2 className='text-sub_heading_dark text-base mb-[10px]'>
+          <h2 className='text-sub_heading_dark text-base mb-[5px] sm:mb-[10px]'>
             Web Developer
           </h2>
-          <h1 className='font-semibold text-3xl lg:text-5xl text-heading_dark mb-4 lg:mb-8'>
+          <h1 className='font-semibold text-3xl lg:text-5xl text-heading_dark mb-8'>
             Anuj Kamboj
           </h1>
           <Hyphenated>
