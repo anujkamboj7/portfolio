@@ -28,7 +28,7 @@ const Service = () => {
           const { title, img_url } = data;
           return (
             <div
-              className='h-[180px] lg:h-[200px] w-full bg-cta_dark rounded-2xl flex items-center justify-center flex-col'
+              className='border-2 border-[#444] h-[200px] w-full bg-cta_dark rounded-[10px] flex items-center justify-center flex-col'
               key={title}
             >
               <div className='mb-8 lg:mb-10 h-[44px] w-[44px] lg:h-[54px] lg:w-[54px] relative'>

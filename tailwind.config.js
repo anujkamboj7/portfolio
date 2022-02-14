@@ -32,6 +32,8 @@ module.exports = {
       },
     },
     extend: {},
+    hyphens: {
+      "foo-bar": "foo-bar",
+    },
   },
-  plugins: [],
 };

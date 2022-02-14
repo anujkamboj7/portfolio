@@ -43,27 +43,27 @@ const slideData = [
   {
     title: "Agency",
     madeWith: "Wordpress",
-    url: "/",
+    url: "#",
   },
   {
     title: "Portfolio",
     madeWith: "Wordpress",
-    url: "/",
+    url: "#",
   },
   {
     title: "Restaurant",
     madeWith: "Wordpress",
-    url: "/",
+    url: "#",
   },
   {
     title: "Portfolio",
     madeWith: "Wordpress",
-    url: "/",
+    url: "#",
   },
   {
     title: "Agency",
     madeWith: "Wordpress",
-    url: "/",
+    url: "#",
   },
 ];
 const Projects = () => {

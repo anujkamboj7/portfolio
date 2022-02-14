@@ -11,6 +11,9 @@
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 .active {
   border-bottom: 2px solid #007ced;
   opacity: 1;

@@ -34,7 +34,7 @@ const Contact = () => {
       recaptchaRef.current.reset();
       setToken("");
       toast.success("Message Successfully Sent", {
-        duration: 2500,
+        duration: 3000,
         position: "top-right",
         style: {
           borderRadius: "10px",
