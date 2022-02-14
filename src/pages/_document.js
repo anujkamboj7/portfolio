@@ -9,10 +9,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <meta
-          name='viewport'
-          content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
-        ></meta>
+        <meta name='viewport' content='width=device-width, user-scalable=no' />
         <link
           href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'
           rel='stylesheet'

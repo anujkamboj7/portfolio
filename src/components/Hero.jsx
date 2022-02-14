@@ -4,7 +4,7 @@ import Hyphenated from "react-hyphen";
 const Hero = () => {
   return (
     <div
-      className='container pt-[50px] sm:pt-[60px] pb-10 lg:pt-[80px] lg:py-16'
+      className='container pt-[80px] sm:pt-[100px] pb-10 lg:pt-[130px] lg:py-16'
       name='about'
       id='about'
     >
