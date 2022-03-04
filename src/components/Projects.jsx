@@ -41,7 +41,6 @@ const swiper = new Swiper(".swiper", {
 });
 
 const Projects = ({ projects }) => {
-  console.log(projects);
   return (
     <div className='container mx-auto px-[30px] py-10 lg:py-14' name='project'>
       <div className='flex items-start  justify-between  relative'>
@@ -63,7 +62,7 @@ const Projects = ({ projects }) => {
                 <Link href={project.properties.live_url.url}>
                   <a rel='noopener noreferrer' target='_blank'>
                     <div
-                      className={`h-[210px] w-[302px] max-w-full rounded-[6px] relative overflow-hidden bg-cta_dark`}
+                      className={`h-[210px] w-[302px] max-w-full rounded-[10px] relative overflow-hidden bg-cta_dark`}
                     >
                       <Image
                         layout='fill'
