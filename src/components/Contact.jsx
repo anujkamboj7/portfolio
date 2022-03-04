@@ -71,7 +71,7 @@ const Contact = () => {
             business.ak77@gmail.com
           </a>
 
-          <a
+          {/* <a
             href='https://api.whatsapp.com/send?phone=919315183447'
             target='_blank'
             rel='noreferrer'
@@ -81,7 +81,7 @@ const Contact = () => {
               <RiWhatsappLine className='w-7 h-7 text-primary' />
             </span>
             +91 9315183447
-          </a>
+          </a> */}
         </div>
         <div className='md:flex-[0.55] lg:flex-[0.4]'>
           <h2 className='section__heading'>How can I Help You?</h2>

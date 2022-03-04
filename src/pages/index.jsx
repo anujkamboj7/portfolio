@@ -6,8 +6,9 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import ScrollBack from "../components/ScrollBack";
 import Footer from "../components/Footer";
+const { Client } = require("@notionhq/client");
 
-export default function Home() {
+export default function Home({ projects }) {
   return (
     <div className='bg-bg_dark overflow-hidden  antialiased select-none relative break-word'>
       <Head>
@@ -21,15 +22,37 @@ export default function Home() {
         />
 
         <link rel='shortcut icon' type='image' href='/Logo.png' />
-        <title>Anuj Kamboj – Full Stack Developer.</title>
+        <title>Anuj Kamboj – Full Stack Developer</title>
       </Head>
       <Navbar />
       <Hero />
       <Service />
-      <Projects />
+      <Projects projects={projects} />
       <Contact />
       <Footer />
       <ScrollBack />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const notion = new Client({ auth: process.env.NOTION_API_KEY });
+  const databaseId = process.env.NOTION_DATABASE_ID;
+
+  const response = await notion.databases.query({
+    database_id: databaseId,
+    sorts: [
+      {
+        property: "title",
+        direction: "ascending",
+      },
+    ],
+  });
+
+  return {
+    props: {
+      projects: response.results,
+    },
+    revalidate: 1,
+  };
 }
