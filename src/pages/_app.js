@@ -6,17 +6,17 @@ function MyApp({ Component, pageProps }) {
     <>
       <Script
         id='my-script'
-        strategy='lazyOnload'
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS}`}
+        strategy='afterInteractive'
+        src={`https://www.googletagmanager.com/gtag/js?id=G-07P2MPTH17`}
       />
 
-      <Script id='my-script2' strategy='lazyOnload'>
+      <Script id='google-analyitics-script' strategy='afterInteractive'>
         {`window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-        gtag('config', ${process.env.GOOGLE_ANALYTICS});
-          `}
+        gtag('config', 'G-07P2MPTH17')
+        `}
       </Script>
 
       <Component {...pageProps} />

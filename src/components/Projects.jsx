@@ -15,10 +15,10 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     "@0.40": {
       slidesPerView: 1,
-      spaceBetween: 24,
+      spaceBetween: 0,
     },
     "@0.75": {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 24,
     },
     "@1.00": {
@@ -43,7 +43,7 @@ const swiper = new Swiper(".swiper", {
 const Projects = ({ projects }) => {
   console.log(projects);
   return (
-    <div className='container mx-auto py-10 lg:py-14' name='project'>
+    <div className='container mx-auto px-[30px] py-10 lg:py-14' name='project'>
       <div className='flex items-start  justify-between  relative'>
         <h2 className='section__heading'>Projects</h2>
         <div className='flex gap-x-4 lg:gap-x-6 mt-1'>
