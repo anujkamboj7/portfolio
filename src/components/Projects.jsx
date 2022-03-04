@@ -62,7 +62,9 @@ const Projects = ({ projects }) => {
               <div className='swiper-slide' key={project.id}>
                 <Link href={project.properties.live_url.url}>
                   <a rel='noopener noreferrer' target='_blank'>
-                    <div className='h-[210px] w-[302px] max-w-full rounded-[6px] relative overflow-hidden'>
+                    <div
+                      className={`h-[210px] w-[302px] max-w-full rounded-[6px] relative overflow-hidden bg-cta_dark`}
+                    >
                       <Image
                         layout='fill'
                         src={
@@ -80,6 +82,7 @@ const Projects = ({ projects }) => {
                           {project.properties.title.title[0].plain_text}
                         </span>
                       </h1>
+
                       <a
                         rel='noopener noreferrer'
                         target='_blank'
