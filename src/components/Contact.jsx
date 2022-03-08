@@ -1,5 +1,4 @@
 import { MdOutlineLocationOn } from "react-icons/md";
-import { RiWhatsappLine } from "react-icons/ri";
 import { VscMail } from "react-icons/vsc";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useRef, useState } from "react";
@@ -70,18 +69,6 @@ const Contact = () => {
             </span>
             business.ak77@gmail.com
           </a>
-
-          {/* <a
-            href='https://api.whatsapp.com/send?phone=919315183447'
-            target='_blank'
-            rel='noreferrer'
-            className='text-heading_dark hover:underline flex items-center gap-x-4'
-          >
-            <span>
-              <RiWhatsappLine className='w-7 h-7 text-primary' />
-            </span>
-            +91 9315183447
-          </a> */}
         </div>
         <div className='md:flex-[0.55] lg:flex-[0.4]'>
           <h2 className='section__heading'>How can I Help You?</h2>
