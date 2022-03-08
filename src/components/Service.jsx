@@ -37,6 +37,7 @@ const Service = () => {
                   objectFit='cover'
                   src={img_url}
                   alt='desing-logo'
+                  priority
                 />
               </div>
 
