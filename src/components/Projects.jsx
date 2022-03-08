@@ -60,7 +60,11 @@ const Projects = ({ projects }) => {
             return (
               <div className='swiper-slide' key={project.id}>
                 <Link href={project.properties.live_url.url}>
-                  <a rel='noopener noreferrer' target='_blank'>
+                  <a
+                    href={project.properties.live_url.url}
+                    rel='noopener noreferrer'
+                    target='_blank'
+                  >
                     <div
                       className={`h-[210px] w-[302px] max-w-full rounded-[10px] relative overflow-hidden bg-cta_dark`}
                     >
@@ -82,14 +86,9 @@ const Projects = ({ projects }) => {
                         </span>
                       </h1>
 
-                      <a
-                        rel='noopener noreferrer'
-                        target='_blank'
-                        href={project.properties.live_url.url}
-                        className='text-primary font-medium text-[15px] flex items-center gap-x-1.5'
-                      >
+                      <div className='text-primary font-medium text-[15px] flex items-center gap-x-1.5'>
                         View Site
-                      </a>
+                      </div>
                     </div>
                   </a>
                 </Link>
