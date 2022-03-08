@@ -75,6 +75,7 @@ const Projects = ({ projects }) => {
                         }
                         alt='project'
                         objectFit='cover'
+                        priority
                       />
                     </div>
 
