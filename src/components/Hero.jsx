@@ -28,13 +28,10 @@ const Hero = () => {
           <h1 className='font-semibold text-4xl lg:text-5xl text-heading_dark mb-[25px] lg:mb-8'>
             Anuj Kamboj
           </h1>
-          <Hyphenated>
-            <p className='text-base_dark leading-7 text-center'>
-              I&apos;m Developer with over 4 years of experience. I create Web
-              Apps and Deliver quality products within specified time limits,
-              Ensuring client satisfaction.
-            </p>
-          </Hyphenated>
+          <p className='text-base_dark leading-7 text-center md:text-left'>
+            I&apos;m Developer with over 4 years of experience. I build
+            interactive websites that run across platforms & devices
+          </p>
         </div>
       </div>
     </div>
