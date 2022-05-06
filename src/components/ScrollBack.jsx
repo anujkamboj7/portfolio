@@ -20,7 +20,7 @@ const ScrollBack = () => {
   return (
     <AnimatePresence>
       {scrollFixed && (
-        <motion.a
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -46,7 +46,7 @@ const ScrollBack = () => {
               d='M5 15l7-7 7 7'
             />
           </svg>
-        </motion.a>
+        </motion.div>
       )}
     </AnimatePresence>
   );

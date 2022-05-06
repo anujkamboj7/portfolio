@@ -8,6 +8,7 @@ import Link from "next/link";
 const swiper = new Swiper(".swiper", {
   modules: [Navigation],
   loop: false,
+  allowTouchMove: false,
   // Optional parameters
   slidesPerView: 1,
   speed: 500,
@@ -59,16 +60,14 @@ const Projects = ({ projects }) => {
           {projects.map((project) => {
             return (
               <div className='swiper-slide' key={project.id}>
-                <Link href={project.properties.live_url.url}>
+                <Link href={project.liveUrl}>
                   <a rel='noopener noreferrer' target='_blank'>
                     <div
                       className={`h-[210px] w-[302px] max-w-full rounded-[10px] relative overflow-hidden bg-cta_dark`}
                     >
                       <Image
                         layout='fill'
-                        src={
-                          project.properties.thumbnail_small.files[0].file.url
-                        }
+                        src={project.thumbnail.url}
                         alt='project'
                         objectFit='cover'
                         priority
@@ -78,7 +77,7 @@ const Projects = ({ projects }) => {
                     <div className='px-2 py-4 space-y-1.5 w-[302px] max-w-full'>
                       <h1 className='space-x-1 flex items-center'>
                         <span className='font-medium text-base text-heading_dark'>
-                          {project.properties.title.title[0].plain_text}
+                          {project.title}
                         </span>
                       </h1>
                       <div className='text-primary font-medium text-[15px] flex items-center gap-x-1.5'>

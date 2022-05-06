@@ -6,7 +6,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import ScrollBack from "../components/ScrollBack";
 import Footer from "../components/Footer";
-const { Client } = require("@notionhq/client");
+import { GraphQLClient } from "graphql-request";
 
 export default function Home({ projects }) {
   return (
@@ -36,23 +36,26 @@ export default function Home({ projects }) {
 }
 
 export async function getStaticProps() {
-  const notion = new Client({ auth: process.env.NOTION_API_KEY });
-  const databaseId = process.env.NOTION_DATABASE_ID;
+  const graphcms = new GraphQLClient(process.env.GRAPHCMS_CONTENT_API_KEY);
 
-  const response = await notion.databases.query({
-    database_id: databaseId,
-    sorts: [
-      {
-        property: "title",
-        direction: "ascending",
-      },
-    ],
-  });
+  const { projects } = await graphcms.request(
+    `
+  {  
+    projects {
+    id
+    title
+    liveUrl
+    thumbnail {
+      url
+    }
+  }
+}
+    `
+  );
 
   return {
     props: {
-      projects: response.results,
+      projects,
     },
-    revalidate: 1,
   };
 }
